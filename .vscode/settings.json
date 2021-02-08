@@ -1,0 +1,25 @@
+{
+    "jshint.options": {
+        "esversion": 6
+      },
+      "eslint.options": {
+        "env":{
+            "es6":true,
+            "browser" : true,
+            "node" : true,
+        },
+        "parserOptions": {
+            "ecmaVersion": 6 ,// or 7,8,9
+            "sourceType": "module",
+        },
+        "ecmaFeatures": {
+            "modules": true,
+            "spread" : true,
+            "restParams" : true
+        },
+        "rules" : {
+            "no-unused-vars" : 2,
+            "no-undef" : 2
+        },
+    }
+}
