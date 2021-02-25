@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{Clsn:function(t,n,e){"use strict";e.r(n),e.d(n,"default",(function(){return r}));e("q1tI");var a=e("AeFk");function r(t){var n=t.data.markdownRemark;return Object(a.a)("div",null,Object(a.a)("h1",null,n.frontmatter.title),Object(a.a)("small",null,n.frontmatter.date),Object(a.a)("div",{dangerouslySetInnerHTML:{__html:n.html}}))}}}]);
+//# sourceMappingURL=component---src-templates-blog-posts-js-303416c62295246655bb.js.map
