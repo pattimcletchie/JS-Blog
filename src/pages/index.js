@@ -10,7 +10,6 @@ export default function Home({ data }) {
       <h1>{title}</h1>
       <p>{description}</p>
       <Link to="/blog">Read my blog</Link>
-      <img alt="cute dog" src={data.image.publicURL} />
     </div>
   )
 }
@@ -22,9 +21,6 @@ export const pageQuery = graphql`
         title
         description
       }
-    }
-    image: file(base: { eq: "cute-dog.png" }) {
-      publicURL
     }
   }
 `

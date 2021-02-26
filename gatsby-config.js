@@ -11,6 +11,7 @@ module.exports = {
     title: "Patti McLetchie",
     description: "Exploring JavaScript ES6 and Beyond",
   },
+  pathPrefix: `/JS-Blog`,
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
