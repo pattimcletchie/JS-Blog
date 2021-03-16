@@ -1,16 +1,24 @@
 import { Link, graphql } from "gatsby"
 
+import Layout from "../components/layout"
 import React from "react"
+import { styled } from "@emotion/styled"
+
+const Paragraph = styled.p`
+  color: pink;
+`
 
 export default function Home({ data }) {
   const { title, description } = data.site.siteMetadata
 
   return (
-    <div>
-      <h1>{title}</h1>
-      <p>{description}</p>
-      <Link to="/blog">Read my blog</Link>
-    </div>
+    <Layout>
+      <div>
+        <h1>{title}</h1>
+        <Paragraph>{description}</Paragraph>
+        <Link to="/blog">Read my blog</Link>
+      </div>
+    </Layout>
   )
 }
 
