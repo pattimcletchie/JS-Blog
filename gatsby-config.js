@@ -29,5 +29,6 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     `gatsby-plugin-emotion`,
+    `react-grid-system`,
   ],
 }

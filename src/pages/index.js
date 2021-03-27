@@ -1,24 +1,45 @@
+import "@fontsource/puritan"
+
+import {Col, Container, Row} from "react-grid-system";
 import { Link, graphql } from "gatsby"
 
-import Layout from "../components/layout"
 import React from "react"
-import { styled } from "@emotion/styled"
+import Theme from "../templates/theme"
+import styled from "@emotion/styled"
 
 const Paragraph = styled.p`
-  color: pink;
+  color:  black;
 `
+
 
 export default function Home({ data }) {
   const { title, description } = data.site.siteMetadata
 
   return (
-    <Layout>
-      <div>
-        <h1>{title}</h1>
-        <Paragraph>{description}</Paragraph>
-        <Link to="/blog">Read my blog</Link>
-      </div>
-    </Layout>
+
+        <Theme>
+          <Container className='forestBackground' fluid>
+            <Row>
+              <Col>
+          <h1>{title}</h1>
+          <Paragraph>{description}</Paragraph>
+          <Link to="/blog">Read my blog</Link>
+          </Col>
+          <Col></Col>
+          </Row>
+          </Container>
+          <Container className='nudeBackground' fluid>
+            <Row>
+              <Col></Col>
+              <Col>
+                <button>
+                  React Projects
+                </button>
+              </Col>
+            </Row>
+          </Container>
+        </Theme>
+
   )
 }
 
