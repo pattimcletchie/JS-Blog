@@ -16,6 +16,8 @@ const MaxWidth = styled.div`
   margin: auto;
 `
 
+const 
+
 
 export default function Home({ data }) {
   const { title, description } = data.site.siteMetadata
