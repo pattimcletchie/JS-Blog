@@ -11,6 +11,11 @@ const Paragraph = styled.p`
   color:  black;
 `
 
+const MaxWidth = styled.div`
+  max-width: 1200px;
+  margin: auto;
+`
+
 
 export default function Home({ data }) {
   const { title, description } = data.site.siteMetadata
@@ -19,20 +24,22 @@ export default function Home({ data }) {
 
         <Theme>
           <Container className='forestBackground' fluid>
+            <MaxWidth>
             <Row>
               <Col>
-          <h1>{title}</h1>
-          <Paragraph>{description}</Paragraph>
-          <Link to="/blog">Read my blog</Link>
-          </Col>
-          <Col></Col>
-          </Row>
+                <h1>{title}</h1>
+                <Paragraph>{description}</Paragraph>
+                <Link to="/blog">Read my blog</Link>
+              </Col>
+              <Col></Col>
+              </Row>
+            </MaxWidth>
           </Container>
           <Container className='nudeBackground' fluid>
             <Row>
               <Col></Col>
               <Col>
-                <button>
+                <button className='blackForest mutedStrawberry'>
                   React Projects
                 </button>
               </Col>
